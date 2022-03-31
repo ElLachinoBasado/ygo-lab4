@@ -2,7 +2,7 @@
     <div class = "main">
         <div class="matchups" v-for="matchup in matchups" :key="matchup.id">            
             <div class = "image">
-                <img :src="'/Matchup/'+matchup.image">
+                <img :src="matchup.path">
             </div>
             <div class = "information">
                 <h2>{{matchup.name}}</h2>
@@ -18,15 +18,32 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
     name: 'MatchupList',
-    props: {
-        matchups: Array
+    data() {
+        return {
+            matchups: [],
+        }
     },
+    created() {
+        this.getMatchups();
+    },
+    methods: {
+        async getMatchups() {
+            try {
+                let response = await axios.get("/api/matchups");
+                this.matchups = response.data;
+                return true;
+            } catch (error) {
+                console.log(error);
+            }
+        },
+    }
 }
 </script>
 
-<style scoped>
+<style scoped>    
     .main {        
         display: flex;
         background-color: black;

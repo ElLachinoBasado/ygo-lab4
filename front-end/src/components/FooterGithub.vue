@@ -2,7 +2,7 @@
     <div>
         <footer>
             <p>Author: Helaman Sung<br>
-            <a href="https://github.com/ElLachinoBasado/CS260CreativeProject3.git">Github Page</a></p>
+            <a href="https://github.com/ElLachinoBasado/ygo-lab4.git">Github Page</a></p>
         </footer>
     </div>
 </template>

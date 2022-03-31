@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '/src/views/HomeView.vue'
 import StrategyView from '/src/views/StrategyView.vue'
 import MatchupView from '/src/views/MatchupView.vue'
-import CardView from '/src/views/CardView.vue'
+import AdminView from '/src/views/AdminView.vue'
 
 Vue.use(VueRouter)
 
@@ -24,9 +24,9 @@ const routes = [
         component: MatchupView
     },
     {
-        path: '/cards',
-        name: 'Cards',
-        component: CardView
+        path: '/admin',
+        name: 'Admin',
+        component: AdminView
     },
 ]
 

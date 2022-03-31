@@ -19,8 +19,8 @@
           </router-link>
         </div>
         <div class = "side-link">
-          <router-link to="/cards">
-            <h2>Cards</h2>      
+          <router-link to="/admin">
+            <h2>Admin</h2>      
           </router-link>
         </div>
       </div>     
