@@ -95,7 +95,7 @@ export default {
         });
         this.addMatchup = r2.data;
       } catch (error) {
-        console.log(error);
+        //console.log(error);
       }
     },
     async getMatchups() {
@@ -104,7 +104,7 @@ export default {
         this.matchups = response.data;
         return true;
       } catch (error) {
-        console.log(error);
+        //console.log(error);
       }
     },
     fileChanged(event) {
@@ -122,7 +122,7 @@ export default {
         this.getMatchups();
         return true;
       } catch (error) {
-        console.log(error);
+        //console.log(error);
       }
     },    
     async editMatchup(matchup) {
@@ -139,7 +139,7 @@ export default {
         this.getMatchups();
         return true;
       } catch (error) {
-        console.log(error);
+        //console.log(error);
       }
     },    
   }

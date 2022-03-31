@@ -55,7 +55,7 @@ app.delete("/api/matchups/:id", async(req,res) => {
     });
     res.sendStatus(200);
   } catch (error) {
-    console.log(error);
+    //console.log(error);
     res.sendStatus(500);
   }
 });
@@ -74,7 +74,7 @@ app.put("/api/matchups/:id", async(req,res) => {
     await matchup.save();    
     res.sendStatus(200);
   } catch (error) {
-    console.log(error);
+    //console.log(error);
     res.sendStatus(500);
   }
 });
@@ -93,7 +93,7 @@ app.post('/api/matchups', async (req, res) => {
     await matchup.save();
     res.send(matchup);
   } catch (error) {
-    console.log(error);
+    //console.log(error);
     res.sendStatus(500);
   }
 });
@@ -104,7 +104,7 @@ app.get('/api/matchups', async (req, res) => {
     let matchups = await Matchup.find();
     res.send(matchups);
   } catch (error) {
-    console.log(error);
+    //console.log(error);
     res.sendStatus(500);
   }
 });
